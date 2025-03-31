@@ -1,13 +1,502 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.realitycont{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-radius: 20px;
+  padding: 1px;
+  width: fit-content;
+}
+.realitycont ul, .booking ul{
+  list-style: none;
+  padding: 10px;
+  /* width: 30%; */
+}
+.realitycont li a, .booking li a{
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.2s ease-in-out;
+}
+.realitycont li a:hover{
+  color: white;
+}
+.reality{
+  /* width: 100%; */
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    #6bb3e4,
+    #00d01f
+  ); /* Gradient background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  position: relative;
+  overflow: hidden;
+  /* background-color: rgba(0, 128, 0, 0.914); */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 15rem; */
+  /* background-color: green; */
+  border-radius: 40px;
+  padding: 15px;
+  margin: 25px;
+  /* width: 30%; */
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.realitylogo img{
+  width: 30%;
+}
+.jahtings button{
+  margin-right: 25px;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: none;
+transition: transform 0.3s;
+transition: 0.5s ease-in-out;
+}
+.jahtings button:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: white;
+}
+
+.imageone img{
+    width: 100%;
+}
+.imageone{
+    margin-top: 5%;
+}
+.benefits{
+    text-align: center;
+    margin: 4%;
+    position: relative;
+    margin-top: 9%; /* Space above */}
+.benefits::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust position */
+  width: 100%;
+  height: 2px;
+  background-color: green; /* Green underline */
+}
+.benefits h2{
+font-size: 44px;
+}
+.lookponme  h3{
+font-size: 60px;
+/* width: 50%; */
+}
+.lookponme{
+    width: 40%;
+}
+.lookponme  p{
+    font-size: 18px;
+    /* width: 40%; */
+    }
+    .babylonimg img{
+        width: 100%;
+    }
+    .homeabout{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .medication{
+        font-size: 20px;
+        border-radius: 15px;
+        background-color: green;
+        color: white;
+        padding: 10px;
+        transition: transform 0.3s;
+        border: none;
+    }
+    .medication:hover{
+        transform: scale(1.1);  
+        color: rgb(0, 0, 0); 
+        background-color: rgba(238, 255, 0, 0.605);
+        }
+        .strikeshit .beeboop{
+           text-align: center;
+           margin-top: 9%;
+           font-size: 50px;
+         
+        }
+        .strikeshit{
+            margin-bottom: 5%;
+        }
+      
+        .msupamlafi{
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+            margin-top: 4%;
+        }
+        .elevation{
+          border-radius: 90px;
+          background-color: grey;
+         box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.316);  
+          padding: 60px;
+          margin: 20px;
+          width: 100%;
+          /* height: 100%; */
+          --s: 83px;
+          --o: 0.5;
+          --c1: rgba(244, 235, 208, var(--o));
+          --c2: rgba(194, 178, 163, var(--o));
+        
+          background-image: linear-gradient(var(--c1) 50%, var(--c2) 50%),
+            linear-gradient(45deg, var(--c1) 50%, var(--c2) 50%),
+            linear-gradient(90deg, var(--c1) 50%, var(--c2) 50%),
+            linear-gradient(135deg, var(--c1) 50%, var(--c2) 50%);
+          background-size: var(--s) var(--s);
+        }
+        .elevation h4{
+          font-size: 40px;
+          font-weight: 600;
+          color: green;
+        }
+        .elevation p{
+          font-weight: 400;
+          color: rgb(157, 4, 4);
+        }
+        .mbio{
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+        .shalipoppi{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+        }
+      
+        .subsurf{
+            text-align: center;
+        }
+
+        .footer{
+            background-color: rgba(0, 128, 0, 0.438);
+             display: flex;
+             justify-content: center;
+             gap: 6rem;
+        }
+
+    .footerimg {
+width: 20%;
+    }
+    .footerimg img{
+        width: 40%;
+            }
+    .firstfooter{
+display: flex;
+width: 30%;
+    }
+    .cardimg{
+        width: 55%;
+    }
+    .cardycontainer{
+      margin: 80px;
+    }
+    .cardcontainer {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Evenly distributes the cards */
+        gap: 20px; /* Adds spacing between cards */
+      }
+      
+      .card {
+        border-radius: 50px;
+        background-color: rgba(240, 248, 255, 0.536);
+        padding: 25px;
+        text-align: center;
+        flex: 1 1 calc(33.33% - 20px); /* Ensures three cards per row */
+        max-width: calc(53.33% - 20px);
+        box-sizing: border-box; /* Ensures padding doesn’t affect width */
+      }
+      .prodheader{
+        font-size: 35px;
+        text-align: center;
+      }
+      .imglink img{
+        transition: transform 0.5s;
+      }
+      .imglink icardtextmg:hover{
+transform: scale(1.1);      }
+.cardy{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.cardyimg{
+  width: 40%;
+  height: 75vh;
+}
+.cardtext h1{
+  font-size: 35px;
+background-color: yellow;
+width: 50%;
+margin: auto;
+padding: 45px;
+}
+.symptoms{
+  width: 70%;
+}
+.cardtext h3{
+  margin-top: 5%;
+  font-size: 34px;
+  color: rgb(173, 19, 19);
+}
+      
+   .botbar p{
+      text-align: center;
+   }  
+        
+   .botbar h3{
+    font-size: 50px;
+ }  
+ .botbarcontainer{
+  height: 100%;
+  /* Add your background pattern here */
+  background-image: repeating-radial-gradient(  #1a1515 80%,#4b9d4bf3 90%,#7396ad 90%);
+  background-size: 65px 65px;
+  /* background-color: rgba(21, 135, 21, 0.717); */
+  margin: 30px;
+  border-radius: 30px;
+  padding: 50px;
+  color: rgb(255, 255, 255);
+ } 
+ /* From Uiverse.io by elijahgummer */ 
+.container {
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(
+    45deg,
+    #308bc8,
+    #04ed65
+  );  */
+  /* adow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+  border-radius: 10px; /* Rounded cobox-shrners */
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none; /* Allow clicking through the pattern layer */
+}
+
+.contact{
+  text-align: center;
+  border: solid 1px black;
+  color: black;
+  border-radius: 20px;
+margin: 40px; 
+padding: 30px;
+ display: flex;
+ gap: 3rem;
+}
+.callme{
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+.contact i{
+  font-size: 50px;
+}
+.mbio img{
+  width: 10%;
+}
+.godspeed img{
+  width: 100%;
+  padding: 30px;
+}
+.godspeedcontent{
+  padding: 20px;
+  width: 100%;
+  font-size: 20px;
+}
+.godspeedcontent h3{
+  font-size: 20px;
+}
+.godspeedcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+godspeedimg{
+  width: 100%;
+  height: auto;
+}
+.godspeed{
+  background-color: #9fd9ffaf;
+  width:40%;
+  width: calc(50% - 10px);
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+.godspeed:hover{
+  background-color: #0b901666;
+color: white;
+}
+
+.subsurf h2{
+font-size: 45px;
+background-color: yellow;
+width: 50%;
+margin: auto;
+padding: 10px;
+}
+.primg{
+  margin: 80px;
+  width: 15%;
+}
+.prodimg{
+  font-size: 40px;
+}
+.prodimg h4{
+color: green;}
+.btnthree{
+  font-size: 17px;
+  height:30%;
+  background: linear-gradient(
+    45deg,
+    #6bb4e4b1,
+    #00d01fb6
+  ); /* Gradient background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.cardtext{
+  /* width: 30%; */
+  font-size: 17px;
+}
+.sautisol{
+  color: red;
+  text-decoration: line-through;
+}
+.burnaboy{
+  color: green;
+}
+.discount{
+  display: flex;
+  gap: 3rem;
+}
+.btnthree:hover{
+  background: linear-gradient(
+    45deg,
+    #f15454b1,
+    #e4cf2cb6
+  ); /* Gradient background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.babylonimg {
+width: 60%;
+}
+.backye{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 5%;
+}
+/* From Uiverse.io by nathann09 */ 
+.form {
+  background-color: #fff;
+  display: block;
+  padding: 1rem;
+  max-width: 350px;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input, .form button {
+  outline: none;
+  border: 1px solid #e5e7eb;
+  margin: 8px 0;
+}
+
+.input-container input {
+  background-color: #fff;
+  padding: 1rem;
+  padding-right: 3rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.submit {
+  display: block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #4F46E5;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.signup-link {
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.signup-link a {
+  text-decoration: underline;
+}
+.bookcontainer{
+  margin: 4%;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
 }
